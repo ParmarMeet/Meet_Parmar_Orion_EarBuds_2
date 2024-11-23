@@ -1,0 +1,97 @@
+#overview {
+    border-bottom: .0625rem solid #fff;
+    margin-bottom: .625rem;
+}
+.prom-video {
+    margin: 8% 0 8% 0;
+}
+
+
+.video-s {
+    padding: 56.25% 0 0 0;
+    position: relative;
+}
+
+.hero-text-overview {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 30px;
+    padding: 80px 0 80px 0;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.text-first-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 0;
+    border-top: 1px solid #fff;
+}
+
+.hero-text {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    // border: 1px solid #fff;
+}
+
+.img-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .vertical-text {
+        font-size: 18px;
+    }
+    .hero-text {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .vertical-text .line {
+        font-size: 40px;
+    }
+
+    .hero-text {
+        font-size: 30px;
+    }
+}
+
+#p-info-1 {
+    color: aliceblue; 
+    font-size: 15px; 
+    padding: 15px; 
+    border-right: 1px solid #fff;
+}
+
+#p-info-2 {
+    color: aliceblue; 
+    font-size: 25px; 
+    padding: 15px; 
+    border-right: 1px solid #fff;
+}
+
+.info-sec-con {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #131313;
+}
