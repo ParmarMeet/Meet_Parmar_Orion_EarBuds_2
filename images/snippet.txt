@@ -1,0 +1,25 @@
+<model-viewer src="earbudsssss.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" autoplay>
+    <button class="Hotspot" slot="hotspot-1" data-surface="3 0 2774 2773 2772 0.012 0.409 0.579" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Soft Buds
+            Orion: Innovating comfort and quality in every product.
+        </div>
+    </button><button class="Hotspot" slot="hotspot-2" data-surface="1 0 1547 1546 1545 0.405 0.235 0.360" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Orion Logo
+            The Orion logo symbolizes innovation, precision, and a forward-thinking vision.</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-surface="8 0 23207 23206 23205 0.014 0.793 0.193" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Thin basels : represent elegance and modern simplicity in design.</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-surface="8 0 6066 6065 6064 0.006 0.872 0.122" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Sleek design : blends sophistication with minimalism for a refined, modern aesthetic.</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-surface="8 0 3079 8013 8012 0.868 0.052 0.080" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Colors : A wide range of colors to choose from, offering endless possibilities for personalization.</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
