@@ -1,10 +1,46 @@
 # Meet_Parmar_Orion_EarBuds_2
 
-Orion Earbuds Website
+# Project Overview
 
-THE IMAGES USED IN WEBSITE ARE EXPORTED FROM MOTION DESIGN CLASSES FILE AND ARE MADE IN PHOTOSHOP. ORION EARBUDS. Sorry tried but couldnt make x ray slider functioning.
+Hi there! Welcome to the Orion Earbuds Interactive Experience. This project combines a sleek X-ray slider and a vertical scrolling animation, showcasing the premium features of Orion Earbuds in a visually engaging and interactive way. Using an exported image sequence from Cinema 4D and the powerful GreenSock (GSAP) library, I’ve created a scroll-driven animation that brings these incredible earbuds to life.
 
-"In this project, we delve into the realm of innovative audio technology by conceptualizing a cutting-edge pair of earbuds and their accompanying charging case. Using Cinema 4D, these concepts come alive as we meticulously model, texture, light, and animate our designs, preparing them for their spotlight on our promotional website. Beyond the base model, our design journey sees the creation of multiple color variants of the earbuds and an insightful X-ray view revealing the intricate internal components. For those seeking an immersive experience, we've also exported the 3D model for augmented reality (AR) use on our promotional platform. Here, users can engage with interactive hotspots or witness a mesmerizing animated exploded view of the earbuds. "
+# Features
+
+X-ray Slider/Image Revealer
+
+An innovative slider that allows users to reveal the internal design and advanced technology of the Orion Earbuds.
+Smooth and intuitive controls make exploring the features fun and informative.
+Fully responsive for various screen sizes and devices.
+Vertical Scrolling Animation with GreenSock
+
+A dynamic animation driven by GreenSock’s ScrollTrigger, letting users explore the story of Orion Earbuds as they scroll.
+The animation highlights key features like noise cancellation, battery life, and ergonomic design, making it engaging and interactive.
+Optimized performance ensures smooth playback, even with a high-quality image sequence.
+Seamless Integration of Exported Image Sequence
+
+Leveraged Cinema 4D renders to create a polished visual experience.
+Each frame is precisely timed for a seamless scrolling experience.
+How It Works
+As you scroll, the animation transitions through the image sequence, showcasing the journey of Orion Earbuds from concept to reality.
+The X-ray slider allows a deeper dive into the earbuds’ design, revealing their internal components and cutting-edge technology.
+
+Why Orion Earbuds?
+This project is inspired by the cutting-edge features of Orion Earbuds:
+
+Advanced Noise Cancellation for immersive sound.
+30-Hour Battery Life to power through your day.
+Sleek Design that’s as comfortable as it is stylish.
+Seamless Connectivity for an effortless user experience.
+
+# Technology Stack
+
+GreenSock (GSAP): ScrollTrigger for scroll-driven animations.
+Cinema 4D: For high-quality image sequences.
+HTML, CSS, and JavaScript: To build a responsive and interactive web experience.
+How to Run the Project
+Clone the repository to your local machine.
+Open the index.html file in a browser to explore the X-ray slider and scroll animation.
+Ensure all assets (image sequence and GSAP library) are in the correct directories for smooth operation.
 
 # Installation
 
