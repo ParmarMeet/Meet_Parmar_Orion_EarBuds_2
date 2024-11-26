@@ -13,6 +13,25 @@ video-animation-con {
   position: relative;
 }
 
+.foreground-video {
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.tex-waves {
+  position: relative;
+  color: #fff;
+  top: -10%;
+  left: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 1200px) {
   #mobile-tablet-view {
     display: none;
@@ -45,7 +64,7 @@ video-animation-con {
 
   .image-left {
     background: url(../images/default_view.jpg) no-repeat;
-    width: 50%; /*start the image at the halfway point*/
+    width: 50%;
     background-size: cover;
   }
 

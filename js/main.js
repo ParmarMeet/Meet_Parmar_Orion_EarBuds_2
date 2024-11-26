@@ -1,16 +1,13 @@
 (() => {
-  //console.log("IIFE Fired");
-  //variables
   gsap.registerPlugin(ScrollTrigger);
 
   gsap.from(["img[src='images/orionlogo.jpg']", ".Orion-text"], {
-    duration: 1, //
-    opacity: 0, //
-    scale: 0.5, //
+    duration: 1,
+    opacity: 0,
+    scale: 0.5,
     ease: "power2.out",
   });
 
-  // animation for the images, photos
   gsap.from(".img-vertical img", {
     scrollTrigger: {
       trigger: ".img-vertical",
@@ -61,7 +58,6 @@
     });
   });
 
-  // animation for the buy section -color versions
   gsap.utils.toArray(".color-img").forEach((img) => {
     gsap.from(img, {
       scrollTrigger: {
@@ -75,7 +71,6 @@
     });
   });
 
-  // animation for the mobile tablet xray images
   gsap.utils.toArray("#mobile-tablet-view img").forEach((img) => {
     gsap.from(img, {
       scrollTrigger: {
@@ -91,40 +86,35 @@
   });
 
   gsap.registerPlugin(ScrollToPlugin);
-  // Canvas Variables
+
   const canvas = document.querySelector("#explode-view");
   const context = canvas.getContext("2d");
   canvas.width = 1920;
   canvas.height = 1080;
-  const frameCount = 300;
+  const frameCount = 72;
   const images = [];
   const buds = {
     frame: 0,
   };
   for (let i = 0; i < frameCount; i++) {
-    //console.log(i);
     const img = new Image();
 
-    img.src = `images/1_seq/frame${(i + 1).toString().padStart(4, "0")}.jpg`;
+    img.src = `images/1_seq/Untitled${(i + 1).toString().padStart(4, "0")}.jpg`;
     images.push(img);
   }
 
-  // Xray Functionality
   let imageCon = document.querySelector("#imageCon"),
     drag = document.querySelector(".image-drag"),
     left = document.querySelector(".image-left"),
     dragging = false,
     min = 0,
     max = imageCon.offsetWidth;
-  // Scrolling Functionality Variables
+
   const navLinks = document.querySelectorAll("#main-header nav ul li a");
   const menu_btn = document.querySelector(".hamburger");
   const mobile_menu = document.querySelector(".mobile-nav");
 
-  //functions
-  // MODEL VIEWER
   function modelLoaded() {
-    //console.log(hotspots);
     hotspots.forEach((hotspot) => {
       hotspot.style.display = "block";
     });
@@ -163,7 +153,6 @@
     gsap.to(selected, 1, { autoAlpha: 0 });
   }
 
-  // Scrolling Functionality
   function scrollLink(e) {
     e.preventDefault();
     console.log(e.currentTarget.hash);
@@ -186,9 +175,7 @@
   }
 
   function onMove(event) {
-    // console.log("on move called");
     if (dragging === true) {
-      // console.log("dragging");
       let x = event.clientX - imageCon.getBoundingClientRect().left;
       console.log(x);
 
@@ -203,9 +190,8 @@
     }
   }
 
-  //CANVAS FUNCTIONALITY
   gsap.to(buds, {
-    frame: 299,
+    frame: 71,
     snap: "frame",
     scrollTrigger: {
       trigger: "#explode-view",
@@ -232,12 +218,12 @@
     {
       title: "Orion logo",
       text: "The Orion logo symbolizes innovation, precision, and a forward-thinking vision.",
-      image: "../img/Group.png",
+      image: "../images/Group.png",
     },
     {
       title: "Soft Buds ",
       text: "Soft Buds Orion: Innovating comfort and quality in every product.",
-      image: "../img/buds.jpeg",
+      image: "../images/buds.jpeg",
     },
 
     {
@@ -311,24 +297,23 @@
     hotspot.addEventListener("mouseover", showInfo);
     hotspot.addEventListener("mouseout", hideInfo);
   });
-  //Event Listener
-  // Hamburger Menu Event Listener
+
   menu_btn.addEventListener("click", function () {
     menu_btn.classList.toggle("is-active");
     mobile_menu.classList.toggle("is-active");
   });
-  // Model Viewer Event Listener
+
   model.addEventListener("load", modelLoaded);
 
   hotspots.forEach(function (hotspot) {
     hotspot.addEventListener("mouseover", showInfo);
     hotspot.addEventListener("mouseout", hideInfo);
   });
-  // Scrolling Event Listener
+
   navLinks.forEach((link) => {
     link.addEventListener("click", scrollLink);
   });
-  // Xray Event Listener
+
   drag.addEventListener("mousedown", onDown);
   document.body.addEventListener("mouseup", onUp);
   document.body.addEventListener("mousemove", onMove);
